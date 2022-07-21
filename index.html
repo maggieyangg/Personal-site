@@ -1,25 +1,32 @@
-<!doctype html>
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="styles.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
-        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- 
-        Challenge 1:
-        Write the HTML for your personal website.
-        -->
-        <img src="5C85E843-4A27-4F44-941D-BBD0EE898BD2-7C7CE783-D0FA-4388-B71B-C7886F59C880.JPG">
-        <h1>Hi, my name is Maggie</h1>
-        <h2>Fun facts about me:</h2>
-        <ul>
-            <li>Live in the UK</li>
-            <li>22 years old</li>
-            <li>Loves healthy foods</li>
-        </ul>
-        <p>Please connect with me on <a href="https://www.linkedin.com/in/yang-yang-chen-0699b8233/" target="_blank">LinkedIn here.</a></p>
-        <input type="text" placeholder="Enter email...">
-        <button>Join newsletter</button>
+        <div class="container">
+            <div class="home-container">
+                <h3>HOME</h3>
+                <div class="black-container">
+                    <p class="counter" id="count-indicator-home">0</p>
+                </div>
+                <div class="button-div">
+                    <button onclick="addHome(1)">+1</button>
+                    <button onclick="addHome(2)">+2</button>
+                    <button onclick="addHome(3)">+3</button>
+                </div>
+            </div>
+            <div class="guest-container">
+                <h3>GUEST</h3>
+                <div class="black-container">
+                    <p class="counter" id="count-indicator-guest">0</p>
+                </div>
+                <div class="button-div">
+                    <button onclick="addGuest(1)">+1</button>
+                    <button onclick="addGuest(2)">+2</button>
+                    <button onclick="addGuest(3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
